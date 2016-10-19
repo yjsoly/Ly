@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>再一次打地鼠</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		ul{
+			width: 600px;
+			height: 510px;
+			margin: auto;
+			background-color: green;
+		}
+		li{
+			width: 200px;
+			height: 170px;
+			list-style: none;
+			float: left;
+			line-height: 170px;
+		}
+	</style>
+</head>
+<body>
+	<button id="gamestar" onclick="gameStart()">游戏开始!</button>
+	<button id="gamestar" onclick="gameOver()">游戏结束!</button>
+	<span>得分</span>
+	<input type="text" id="gamescore">
+	<span >时间</span>
+	<span id="tititi">10</span>
+	<ul>
+		<li><input type="button" onclick="getScore()" class="iii" value="我是老鼠,快来打我吖!"></li>
+		<li><input type="button" onclick="getScore()" class="iii" value="我是老鼠,快来打我吖!"></li>
+		<li><input type="button" onclick="getScore()" class="iii" value="我是老鼠,快来打我吖!"></li>
+		<li><input type="button" onclick="getScore()" class="iii" value="我是老鼠,快来打我吖!"></li>
+		<li><input type="button" onclick="getScore()" class="iii" value="我是老鼠,快来打我吖!"></li>
+		<li><input type="button" onclick="getScore()" class="iii" value="我是老鼠,快来打我吖!"></li>
+		<li><input type="button" onclick="getScore()" class="iii" value="我是老鼠,快来打我吖!"></li>
+		<li><input type="button" onclick="getScore()" class="iii" value="我是老鼠,快来打我吖!"></li>
+		<li><input type="button" onclick="getScore()" class="iii" value="我是老鼠,快来打我吖!"></li>
+	</ul>
+</body>
+<script type="text/javascript">
+	var time = document.getElementById("tititi");
+	var mouse = document.getElementsByClassName("iii");
+	var sss = document.getElementById("gamescore");
+	var flag = false;
+	var score = 0 ;
+	var playing = true;
+	var timeId = null;
+	function gameStart(){
+	timeId = setInterval(function(){
+		if (playing) {
+		var suiji =Math.floor(Math.random()*9);
+		for (var i=0;i<mouse.length;i++) {
+			mouse[i].style.display="none";
+		}
+		mouse[suiji].style.display="inline-block";
+		flag=false;
+			}
+		},1000);
+		timeOver();
+	}
+	function getScore(){
+		if (flag==false) {
+		score +=10;
+		sss.value=score;
+		}
+		flag=true;
+	}
+	function gameOver(){
+		for (var i=0;i<mouse.length;i++) {
+		mouse[i].style.display="none";
+		}
+		playing =false;
+		window.clearInterval(timeId);
+		alert("游戏结束你的得分是:"+score);
+	}
+	function timeOver(){
+	 	var timeId1=setInterval(function(){
+	 		var bbb = time.innerHTML;
+	 		time.innerHTML=bbb-1;
+	 	if (time.innerHTML==0) {
+	 		gameOver();
+	 		window.clearInterval(timeId1);
+	 	}
+	 	},1000);
+	}
+</script>
+</html>

@@ -1,0 +1,7 @@
+body,p,div,ul,li{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font: 14px/1.5 #333 "microsoft yahei";
+}

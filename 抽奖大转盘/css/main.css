@@ -1,0 +1,19 @@
+#zhuanpan{
+	width: 531px;
+	height: 531px;
+	margin: 50px auto;
+	position: relative;
+	background: url(../img/底部.png);
+}
+#zhizhen{
+	width: 174px;
+	height: 228px;
+	position: absolute;
+	background: url(../img/指针.png);
+	left:178.5px; 
+	z-index:999; 
+	cursor:pointer; 
+	top:132.5px;
+	transform-origin: 87px 133px;
+	transform: rotate(0deg);
+}

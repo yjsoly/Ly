@@ -1,0 +1,8 @@
+body,p,img,div{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font: 14px/1.5 "microsoft yahei";
+	/*overflow: hidden;*/
+}

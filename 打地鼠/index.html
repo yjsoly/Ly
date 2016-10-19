@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>打地鼠</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/base.css"/>
+        <link rel="stylesheet" type="text/css" href="css/command.css"/>
+    </head>
+    <body>
+        <div id="content">
+            <input type="button" value="开始游戏" onclick="GameStart()">
+            <input type="button" value="结束游戏" onclick="GameOver()">
+           <form name="form1">
+                <label>分数：</label>
+                <input type="text" name="score" size="5">
+                <label>命中率：</label>
+                <input type="text" name="success" size="10">
+                <label>倒计时：</label>
+                <input type="text" name="remtime" size="5">
+            </form>
+            <table>
+                <tr>
+                    <td id="td[0]" onclick="hit(0)"></td>
+                    <td id="td[1]" onclick="hit(1)"></td>
+                    <td id="td[2]" onclick="hit(2)"></td>
+                    <td id="td[3]" onclick="hit(3)"></td>
+                    <td id="td[4]" onclick="hit(4)"></td>
+                </tr>
+                <tr>
+                    <td id="td[5]" onclick="hit(5)"></td>
+                    <td id="td[6]" onclick="hit(6)"></td>
+                    <td id="td[7]" onclick="hit(7)"></td>
+                    <td id="td[8]" onclick="hit(8)"></td>
+                    <td id="td[9]" onclick="hit(9)"></td>
+                </tr>
+                <tr>
+                    <td id="td[10]" onclick="hit(10)"></td>
+                    <td id="td[11]" onclick="hit(11)"></td>
+                    <td id="td[12]" onclick="hit(12)"></td>
+                    <td id="td[13]" onclick="hit(13)"></td>
+                    <td id="td[14]" onclick="hit(14)"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+ <script src="js/main.js" type="text/javascript" charset="utf-8"></script>

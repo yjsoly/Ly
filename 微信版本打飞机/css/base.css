@@ -1,0 +1,156 @@
+/*.background{
+	height: 567px;
+	width: 321px;
+	background: url(../img/back.png);
+	margin: 10px auto;
+	overflow: hidden;
+}
+.airplane{
+	width: 80px;
+	height: 80px;
+	background: url(../img/gameArts.png) no-repeat right -330px;
+	position: absolute;
+	left: 610px;
+	bottom: 30px;
+}
+#stop{
+	width: 40px;
+	height: 30px;
+	background: url(../img/BurstAircraftPause.png);
+	position: absolute;
+	top: 25px;
+	left: 625px;
+	display: none;
+}
+#start{
+	width: 92px;
+	height: 20px;
+	background: url(../img/Fav_Cell_Progress_Bkg.png);
+	position: absolute;
+	top: 280px;
+	left: 595px;
+	text-align: center;
+	line-height: 20px;
+}
+#bullet{
+	width: 10px;
+	height: 18px;
+	background: url(../img/gameArts.png) no-repeat -40px -726px;
+	position: absolute;
+	left: 29px;
+	top: -16px;
+	display: none;
+}
+#score{
+	position: absolute;
+	text-align: center;
+	line-height: 18px;
+	font: 18px/18px "microsoft yahei";
+	top: 25px;
+	left: 720px;
+}*/
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#contentdiv{
+    position: absolute;
+    left: 500px;
+}
+#startdiv{
+    width: 320px;
+    height: 568px;
+    background-image: url(../img/开始背景.png);
+}
+button{
+    outline: none;
+}
+#startdiv button{
+    position: absolute;
+    top: 500px;
+    left: 82px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #c4c9ca;
+}
+#maindiv{
+    width: 320px;
+    height: 568px;
+    background-image:url(../img/background_1.png) ;
+    display: none;
+}
+#maindiv img{
+    position: absolute;
+    z-index: 1;
+}
+#scorediv{
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: none;
+}
+#scorediv{
+    font-size: 18px;
+    font-weight: bold;
+}
+#suspenddiv{
+    position: absolute;
+    top: 210px;
+    left: 82px;
+    display: none;
+    z-index: 2;
+}
+#suspenddiv button{
+    width: 150px;
+    height: 30px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #c4c9ca;
+}
+#enddiv{
+    position: absolute;
+    top: 210px;
+    left: 75px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    background-color:#d7ddde;
+    display: none;
+    z-index: 2;
+}
+.plantext{
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#planscore{
+    width: 160px;
+    height: 80px;
+    line-height: 80px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-size: 16px;
+    font-weight: bold;
+}
+#enddiv div{
+    width: 160px;
+    height: 50px;
+}
+#enddiv div button{
+    margin-top:10px ;
+    width: 90px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 30px;
+}

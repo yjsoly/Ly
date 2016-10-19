@@ -1,0 +1,40 @@
+#bg{
+	width: 900px;
+	height: 450px;
+	background: pink;
+	margin-top: 20px;
+	margin: auto;
+	cursor: default;
+	position:relative;
+	overflow: hidden;
+	margin-top: 50px;
+}
+h1{
+	font:50px/300px "microsoft yahei";
+	text-align: center;
+	color: darkslategrey;
+}
+#start{
+	font-size: 50px;
+	text-align: center;
+	color: pink;
+	background: lightseagreen;
+	width: 150px;
+	margin: auto;
+	border-radius: 20px;
+}
+.zimu{
+	color:#333;
+	font:26px/33px "microsoft yahei";
+	text-align: center;
+	background: lightskyblue;
+	border-radius: 20px;
+}
+#score{
+	position: absolute;
+	text-align: center;
+	font: 26px/30px "microsoft yahei";
+	left: 442px;
+	color: red;
+	display: none;
+}
